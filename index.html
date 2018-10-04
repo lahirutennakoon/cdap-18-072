@@ -16,7 +16,7 @@
     <noscript>
         <link rel="stylesheet" href="css/skel-noscript.css" />
         <link rel="stylesheet" href="css/style.css" />
-
+        <link rel="stylesheet" href="css/custom.css">
     </noscript>
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
@@ -64,11 +64,30 @@
                             <span class="byline">for Students to learn from wherever they are</span>
                         </header>
 
-                        <h1>Abstract</h1>
+                        <header>
+                            <h3 style="font-size: large;">Abstract</h3>
+                            <p>
+                                Today, with the rapid growth of technology and usage of internet services, e-learning has become one of the latest trends in the education sector. As a result, students tend to prefer e-learning than being physically present in a lecture due to multiple reasons. This document examines an innovative approach in the form of smart cloud-based system to enhance the current e-learning procedures, particularly in universities. The “Lecture Capturing System” is a cloud-based web application which uses enhanced techniques to provide an interactive e-learning experience to users of the system. It has the ability to support multiple enterprise customers. It uses a facial recognition-based authentication process to allow remote users to login to the system. A Pan-Tilt-Zoom (PTZ) IP camera captures and tracks the lecturer during the lecture session and this is streamed live to remotely logged-in students. The lecturer can also share the computer screen if required. The camera intelligently identifies specific gestures performed by the lecturer to rotate towards the audience with the aid of gesture analyzing algorithms. Attendance of remote online students is marked automatically during a live-streaming lecture by using multiple facial recognition processes executing on the server. Offline recording of lectures is also supported after which the video is split into a series of chapters/thumbnails and the audio is converted to text; each chapter representing a presentation slide and the relevant text. Bandwidth and quota are managed intelligently to ensure the best possible transmission rate with minimum data consumption in order to avoid filling the link to capacity which would result in network congestion and poor performance of the network. This is a revolutionary system which is capable of taking e-learning to the next level as it provides a complete classroom experience and makes the whole learning and teaching process efficient and relaxing.
+                            </p>
+                            <p>
+                                <i>
+                                    Keywords—PTZ camera control, gesture detection, biometric authentication and attendance, video thumbnails creation, bandwidth and quota management
+                                </i>
+                            </p>
+                        </header>
+
                         <p>
-                            <a href="#" class="image full"><img src="images/medicalservices-banner.jpg" alt=""></a>
                         </p>
-                        <p style="font-size:30px; color:#21374B;"> magics</p>
+
+                        <header>
+                            <h3 style="font-size: large;">System Architecture</h3>
+                            <p>
+                                The system is a cloud-based web application which is capable of supporting multiple enterprise customers. Remote students can access the system after logging in via biometric authentication (facial recognition). A PTZ IP camera provides a continuous video stream of the lecturer and audience to the central server via the Kurento media server during a lecture session. The server broadcasts this stream live to the remote students. The lecturer’s screen is also shared if required. The attendance of remote students is marked by capturing their faces through their webcams and running a neural network algorithm on the server for identification. Lecturers are also able to do an offline lecture recording and then upload it to the server where this will be split into chapters and the audio to text.
+                            <div style="text-align: center;">
+                                <img src="images/systemArchitecture.PNG" alt="systemArchitecture">
+                            </div>
+                            </p>
+                        </header>
                     </section>
                 </div>
 

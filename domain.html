@@ -55,22 +55,6 @@
         <div class="container">
             <div class="row">
                 <!-- Content -->
-                <div style="margin-bottom:40px; margin-top:10px;" id="content" class="12u skel-cell-important">
-                    <section>
-                        <header>
-                            <h2 style="font-size:30px;">Apply easily and get results efficently</h2>
-
-                        </header>
-                        <hr class="style13">
-                        <p>Our Main process is, Where students applying for their <strong>Medical Internships. </strong>Our Main Target Audience is <strong>Goverment Medical Students</strong> To apply an Internship, A Medical student needs to Fill a Form & Submit it to their Respective University. Helath Ministry will Manulally allocating students for their Respective Internship hospital station according to their<strong> Merit Rank. </strong> Our System Main purpose is Using data science and advanced technologies to develop an Automated tool for Pre and post internship Medical appointments handled by government and public health sector as a soluton for above scenario.
-
-
-
-
-                        </p>
-                    </section>
-                    <hr class="style13">
-                </div>
                 <!-- /Content -->
                 <!-- Sidebar -->
                 <!--<div id="sidebar" class="6u">-->
@@ -129,31 +113,6 @@
 
                     </section>
                 </div>
-                <!--<div id="sidebar" class="6u">-->
-                    <!--<section>-->
-
-
-
-                        <!--<header>-->
-                            <!--<h3>Data Splitting and Allocation Tool</h3>-->
-
-                        <!--</header>-->
-                        <!--<p>In machine learning, one of the main requirements is to build computational models with a high ability to generalize well the extracted knowledge. When training e.g. artiﬁcial neural networks, poor generalization is often characterized by over-training. A common method to avoid over-training is the hold-out cross- validation. The basic problem of this method represents, however, appropriate data splitting. In most of the applications, simple random sampling is used. Nevertheless, there are several sophisticated statistical sampling methods suitable for various types of datasets. Z. Reitermanova in Charles University, Faculty of Mathematics and Physics, Prague, Czech Republic shows that a survey of existing sampling methods applicable to the data splitting problem. Supporting experiments evaluating the beneﬁts of the selected data splitting techniques involve artiﬁcial neural networks of the back-propagation type. According to Z. Reitermanova research paper we have identified below features which is important for our research area In machine learning, one of the main requirements is to build computational models with high prediction and generalization capabilities. In the case of supervised learning, a computational model is trained to predict outputs of an unknown target function. The target function is represented by a ﬁnite training dataset T of examples of inputs and the corresponding desired outputs: T = {[~x1 , ~ d1 ], ... , [~xn , ~ dn ]}, where n > 0 is the number of ordered pairs of input/output samples(patterns). At the end of the training process, the ﬁnal model should predict correct outputs for the input samples from T, but it should also be able to generalize well to previously unseen data. Poor generalization can be characterized by over-training.-->
-
-                        <!--</p>-->
-                        <!--<header>-->
-                            <!--<h3>Subject Combination and Internship Station Prediction Tool</h3>-->
-
-                        <!--</header>-->
-                        <!--<p>SPSS statistics is a software package used for logical batch and non-batched statistical analysis. Using SPSS Dr. Yasitha Mathangasingha currently working in General hospital as a medical intern managed to model the prediction model using mathematical analysis. He managed to retrieve the some of the student’s data through a Google form and managed to predict his eligibility to his preferred internship station by using simple mathematics (Sum, Mean, and Variance) and modeling them via SPSS.-->
-                        <!--</p>-->
-
-
-                    <!--</section>-->
-                <!--</div>-->
-                <!-- Sidebar -->
-
-
 
 
 
@@ -183,6 +142,43 @@
                     </section>
                 </div>
                 <!-- Sidebar -->
+
+                <!-- Sidebar -->
+                <div id="sidebar" class="12u">
+                    <br>
+                    <hr class="style13">
+                    <br>
+                    <section>
+                        <header>
+                            <h2>Methodology</h2>
+                        </header>
+                        <header style="margin-bottom:5px;">
+                            <span style="text-decoration:underline;" class="byline">Open Broadcaster Software (OBS) Studio plugin</span>
+                            <p>
+                                A plugin was implemented for the OBS Studio software which allows a lecturer to do an offline recording of a lecture and then upload it directly to the server for further processing. After recording the lecturer’s desktop screen while s/he conducts a lecture, the designed plugin would upload this video to the remote server based on predefined settings at the click of a button. These settings can be changed by the lecturer to suit their needs (e.g. upload video now or at a later scheduled time). Once the video is uploaded to the remote server, the next level of processing should be done at the server.
+                            </p>
+                        </header>
+
+                        <header style="margin-bottom:5px;">
+                            <span style="text-decoration:underline;" class="byline">Video Thumbnails/Chapters Creation</span>
+                            <p>
+                                The lecturer can view the list of videos which have been uploaded. Out of this list, the lecturer can select a video to be converted into a series of thumbnail chapters.
+                                Each frame in the video is analyzed by an algorithm for changes in color and intensity - namely the average HSV color space difference (difference in hue, saturation, and luminance of the frame). If this calculated value is very high than the preceding and following values, it means that there has been a scene change. Therefore, the video is split at this time frame. This process is repeated for the entire length of the video clip until the entire video clip is analyzed and all the video chapters are created. Following this process is the real-time speech transcription (audio-to-text conversion) of each video chapter. This is achieved via the Watson Speech-To-Text API.
+                                This service leverages machine intelligence to transcribe the human voice accurately. The service combines information about grammar and language structure with knowledge of the composition of the audio signal resulting in a remarkable accuracy level of 94.5%.
+                                Therefore, the end result would be a set of videos along with their respective audio, presentation slide, and text. These videos would be stored in the database so that students can access them any time after the lecture session to further understand and clarify their knowledge Some noticeable advantages of this feature is that students can watch the parts of the lecture which they didn’t understand properly, and also skip to various lecture slides instead of watching the entire lecture. Even if the accent of the lecturer is unclear, students can still understand what has been said clearly due to the speech transcription feature.
+                            </p>
+                        </header>
+
+                        <header style="margin-bottom:5px;">
+                            <span style="text-decoration:underline;" class="byline">Quota Management</span>
+                            <p>
+                                The administrator is able to manage the internet quota allocation for users from the dashboard. The list of users along with their usage statistics such as used quota and remaining quota can be viewed filtered by user type (e.g. lecturer, student), month, and year. This monthly quota can be edited by the administrator for a single user (e.g. specific lecturer’s id) or all users of a particular user type (e.g. all students).
+                            </p>
+                        </header>
+                    </section>
+                </div>
+                <!-- Sidebar -->
+
                 <div style="margin-bottom:40px; margin-top:10px;" id="content" class="12u skel-cell-important">
                     <hr class="style13">
                     <section>
