@@ -82,6 +82,18 @@
                         </p>
 
                         <header>
+                            <h3 style="font-size: large;">Introduction</h3>
+                            <p>
+                                Lecture Capturing System is a smart lecture capture system, which facilitates enhanced e-learning. The system allows a lecturer to give out lectures in the usual way with real-time video recording, so that students can remotely log in and attend the lecture with real-time video streaming. In addition to login details of the participants, there is facial recognition to ensure attendance verification and authentication. The audience comprises of basically two groups of people, namely: the students present in the lecture hall and online users. Both these parties can interact with the lecturer if they have any doubts or if in need of any clarification regarding the lecture. Online participants can simply make a request to ask a question and the lecturer can then decide whether to give audio and/or video control over to the participant. When it comes to the students who are physically present in the lecture hall, they can show a predefined gesture to the lecturer to ask a question, so that the camera which captures the audience will focus on that student. This way, the online participants also will be able to get a clear view and feel like they are also a part of the very classroom. The lecturer can share his/her with the audience depending on the situation. Additionally, the lecturer can also share his/her screen with the students when necessary. PTZ cameras are used to capture the lecturer and the audience to give a clear view of what is going on and to make sure the focus is given to the center of attention. As sharing videos is the main concern of the system, special attention is given to bandwidth and quota management to ensure data usage fruitfully. Once a particular session is over, the relevant slide set used in the session will be used to generate thumbnails, along with the audio recordings related to each of them, for later reference by the students.
+                            </p>
+
+                        </header>
+
+                        <p>
+                        </p>
+
+
+                        <header>
                             <h3 style="font-size: large;">System Architecture</h3>
                             <p>
                                 The system is a cloud-based web application which is capable of supporting multiple enterprise customers. Remote students can access the system after logging in via biometric authentication (facial recognition). A PTZ IP camera provides a continuous video stream of the lecturer and audience to the central server via the Kurento media server during a lecture session. The server broadcasts this stream live to the remote students. The lecturer’s screen is also shared if required. The attendance of remote students is marked by capturing their faces through their webcams and running a neural network algorithm on the server for identification. Lecturers are also able to do an offline lecture recording and then upload it to the server where this will be split into chapters and the audio to text.
