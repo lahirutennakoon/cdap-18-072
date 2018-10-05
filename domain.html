@@ -210,6 +210,52 @@
                     <header>
                         <h2>Methodology</h2>
                     </header>
+
+                    <header style="margin-bottom:5px;">
+                            <span style="text-decoration:underline;" class="byline">Live Stream – Auto Tracking Lecturer</span>
+                        <p>
+                            Granting multiple platforms support live streaming of a video, what makes Lecture Capturing System unique is its ability to automatically focusing on the lecturer in real-time, lecturer is framed well in the picture at any moment and viewers can’t be distracted. Takes cinematographic rules into account, which ensures that the viewer remains focused and the viewing experience is aesthetically more interesting and gives the viewers the best viewing angle all the time without a need for a separate cameraman.
+                            An IP camera will be used to track the lecturer’s movement and gestures in front of the camera and produce the necessary PTZ signals to pan, tilt and zoom accordingly thus ensuring that the lecturer’s actions are always recorded without missing any detail. This video recording will be immediately compressed ‘on -the-fly’ in order to reduce its file size, then streamed live and also saved in the database for backup purposes and viewing later. Therefore, the students have the choice of attending the lecture via the live stream or listening to the lecture later. This is very beneficial to students since they can also attend lectures without being physically present (remotely) at the lecture.
+
+                        </p>
+                        <p>
+                            <b>Camera Movement with Detection</b>
+                            <br>
+                            Uses OpenCV’s Haar Cascasde Classifier and dlib libraries to do the person detection task. First it initializes a face cascade using the frontal face haar cascade provided with the OpenCV library. Then it starts to detect And Track the Largest Face it can find, if not tracking Face or lost the tracked face again it uses haar cascade detector to detect face and then correlation tracker to follow it using dlib
+                            Both methods require to scan each the whole frame with a sliding window. The algorithm then tries to find the features of a person in each window position. These methods are too expensive to perform in each frame if we want to run our person tracker on restricted hardware like a Raspberry Pi.
+                            For this reason we combine the person detector with a correlation tracker. The correlation tracker expects a region of interest and starts tracking the pixels inside that region. In subsequent frames it tries to find where the pixels have most likely moved. This is much faster and more robust than trying to find the person in each and every frame again.
+
+                            <p>
+                           <b> Person Detection - Secondary</b><br>
+                            Uses YOLO v2 and Deep Sort with TensorFlow to track the lecturer in the stage. Uses a pre trained model to detect humans.
+                            Uses NVIDIA CUDA to use TensorFlow gpu which is extremely fast than using the cpu version.
+                            You only look once (YOLO) is a state-of-the-art, real-time object detection system. On a Pascal Titan X it processes images at 30 FPS.
+
+                    </p>
+                        <img src="images/yolo3.png" width="300" height="170" alt="">
+                            <p>
+                                <b>PTZ Camera Movement</b><br>
+                            The node-onvif is a Node.js module which allows you to communicate with the network camera which supports the ONVIF specifications.
+                            The ONVIF (Open Network Video Interface) is an open industry forum promoting and developing global standards for interfaces of IP-based physical security products such as network cameras. The ONVIF specifications are available in their web site.
+                            Recently, most of network cameras for business support the ONVIF standard. Furthermore, some network cameras for home support it though the implementation is partial. The node-onvif allows you to control network cameras which implement the ONVIF standard.
+                            With this there are separate commands to move the camera movement left, right, up or down at selected speeds and can freeze movement according to the requirements.
+
+                        </p>
+                    </header>
+
+
+
+
+                    <header style="margin-bottom:5px;">
+                            <span style="text-decoration:underline;" class="byline">Easy Screen Share Browser Extension</span>
+                        <p>
+                            With the ability to share the screen either completed or selected custom application window right from the web browser and start streaming it along the main live stream makes the lectures task at ease and more efficient. This is helpful because most of the times when the lecturer starts to plug his laptop to the main projector in a normal classroom all of his desktop content open tabs on web browser, everything is visible to the students, privacy is a concern and it’s a hassle to switch sharing the screen on and off all the time to the lecturer. With this Easy Screen Share feature lecturer can stream his webcam footage alongside with the shared screen if required (If in front of the laptop blocking the main camera view).
+                            <br>This extension simply initializes socket.io and configures it in a way that single audio/video/screen stream can be shared/relayed over users without any bandwidth/CPU usage issues. This uses RTCMultiConnection is a WebRTC library that is used for WebRTC streaming.
+
+                        </p>
+                    </header>
+
+
                     <header style="margin-bottom:5px;">
                             <span style="text-decoration:underline;" class="byline">Open Broadcaster Software (OBS)
                                 Studio plugin</span>
